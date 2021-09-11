@@ -1,0 +1,192 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background:rgba(214,146,195,0.85);
+            padding: 0 10px;
+        }
+        .wrapper{
+            max-width: 500px;
+            width: 100%;
+            background:radial-gradient(#fff,#CBF2D9 );
+            margin: 50px auto;
+            padding: 30px;
+            box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+        }
+        .text{
+            color: limegreen;
+        }
+        .wrapper .title{
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: cadetblue;
+            font-family: 'Bebas Neue', cursive;
+            text-align: center;
+        }
+        .wrapper .form{
+            width: 100%;
+        }
+        .wrapper .form .form_control{
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .wrapper .form .form_control label{
+            width: 200px;
+            color: #757575;
+            margin-right: 10px;
+            font-size: 14px;
+        }
+        .wrapper .form .form_control .input_field {
+            width: 100%;
+            outline: none;
+            border: 1px solid #d5dbd9;
+            font-size: 15px;
+            padding: 8px 10px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+        .wrapper .form .form_control .input_select{
+            position: relative;
+            width: 100%;
+            height: 37px;
+        }
+        .wrapper .form .form_control .input_select select{
+            -webkit-appearance: none;
+            appearance: none;
+            border: 1px solid #d5dbd9;
+            width: 100%;
+            height: 100%;
+            padding: 8px 10px;
+            border-radius: 3px;
+            outline: none;
+        }
+.wrapper .form .form_control .input_select:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+    margin: 15px 10px 0 0 ;
+}
+.wrapper .form .form_control .input_field:focus,
+.wrapper .form .form_control .input_select:focus{
+    border: 1px solid cadetblue;
+}
+.wrapper .form .form_control p{
+    font-size: 14px;
+    color:#060605;
+}
+        .wrapper .form .form_control .check{
+            width: 15px;
+            height: 15px;
+            position: relative;
+            display: block;
+            cursor: pointer;
+        }
+        .wrapper .form .form_control .check input[type="checkbox"]
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .wrapper .form .form_control .btn-custom {
+            width: 100%;
+            padding: 8px 10px;
+            font-size: 15px;
+            border: 0;
+            background: cornflowerblue;
+            color:rgba(214,146,195,0.85);
+            cursor: pointer;
+            border-radius: 4px;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <div class="title">
+        <h3><span class="text">&nbsp; &nbsp;</span> &nbsp;customer details Form</h3>
+        <hr>
+    </div>
+    <div class="form">
+        <form>
+			
+			
+			<div class="form_control">
+                <label>Size&nbsp;</label>
+                <div class="input_select">
+                    <select id="degree" name="degree">
+                        <option value="">Select Your Size</option>
+                        <option value="CD">XS</option>
+                        <option value="DC">S</option>
+                        <option value="MC">M</option>
+                        <option value="PP">L</option>
+					  
+                  </select>
+              </div>
+          </div>
+			
+			<div class="form_control">
+                <label>Color&nbsp;</label>
+                <div class="input_select">
+                    <select id="degree" name="degree">
+                        <option value="">Select Your color</option>
+                        <option value="CD">Red</option>
+                        <option value="DC">Blue</option>
+                        <option value="MC">Pink</option>
+                        <option value="PP">White</option>
+						<option value="AB">Black</option>
+					  
+                  </select>
+             </div>
+          </div>
+		           <div class="form_control">
+                <label>Payment Method&nbsp;</label>
+                <div class="input_select">
+                    <select id="degree" name="degree">
+                        <option value="">Select Your Payment Method</option>
+                        <option value="CD">Credit Card</option>
+                        <option value="DC">Debit Card</option>
+                        <option value="MC">Master Card</option>
+                        <option value="PP">Pay pal</option>
+					  <option value="COD">Cash on delivery</option>
+                    </select>
+                </div>
+            </div>
+			
+<div class="form_control">
+        <label>Phone Number</label>
+                <input type="text" name="phone" id="phone" class="input_field">
+            </div>
+<div class="form_control terms">
+          <label class="check">
+                    <input type="checkbox" name="agree" id="agree">
+                    <span class="check"></span>
+                </label>
+                <p>I Agreed to terms and conditions</p>
+            </div>
+            <div class="form_control">
+                <a href="New payment form.html"><input type="button" class=btn value=sumbit></a>
+				
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
